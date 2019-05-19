@@ -1,6 +1,91 @@
-<p style="text-indent:-1em; padding-left:1em;"><span>
-    <span>・あああああああああああああああああああああああああああ<span><br>
-    <span>あああああああああああああああああああああああああああ<span><br>
-    <span>あああああああああああああああああああああああああああ<span><br>
-    <span>あああああああああああああああああああああああああああ</span>
-</p>
+<style type="text/css">
+  .warpper{
+    width:100%;
+    margin:2% 0 20% 3%;
+    position:relative;
+  }
+  p{
+    font-size:10px;
+    margin:0px;
+  }
+  h1 , h2  , h3{
+    margin:5px 0px;
+  }
+</style>
+
+<div class="warpper">
+  <h2>SES用</h2>
+    <div><!-- html内に直書き-->
+      <h3>html内に直書き</h3>
+      <p>&lt;style type="text/css"&gt;<br>
+      ここに通常通りCSSを書いていくだけ。<br>
+      &lt;/style&gt;</p>
+    </div>
+    <div><!-- class指定優先順位 -->
+      <h3>class指定優先順位</h3>
+      <p>強　div.divcolor p.color{　「divタグの中のdivcolorクラスの中のpタグの中のcolorクラス」<br>
+        ↑　color:grey;<br>
+        ｜　}<br>
+        ｜　div p.color{　「divタグの中のpタグの中のcolorクラス」<br>
+          ｜　color:orange;<br>
+          ｜　}<br>
+          ｜　p.color{　「pタグの中のcolorクラス」<br>
+            ｜　color:blue;<br>
+            ｜　}<br>
+            ｜　.color{　「colorクラス」<br>
+              ↓　color:red;<br>
+              弱　}<br>
+              最弱は <span style="font-size:20px;">＊</span>（全称指定） </p>
+    </div>
+    <div><!-- class指定変化球 -->
+      <h3>class指定変化球</h3>
+      <p>ダブルで指定<br>
+        .first , .second{<br>
+        &nbsp;&nbsp;&nbsp;color:grey;<br>
+        }
+      </p>
+    </div>
+    <div><!-- text-indent -->
+      <h3>text-indent</h3>
+      <p>&lt;p class="color"style="text-indent:-1em; padding-left:1em;"&gt;</p>
+      <p>二行目以降が１インデント下がる</p>
+      <p class="color"style="text-indent:-1em; padding-left:1em;">
+      ・ああああああああああああああああああああ<br>
+      ああああああああああああああああああああ<br>
+      ああああああああああああああああああああ</p>
+    </div>
+    <div><!-- 下線 -->
+      <h3>下線</h3>
+      <p>&lt;p&gt;リンク先は&lt;a style="border-bottom:solid 1px blue;"&gt;こちらから&lt;/a&gt;/p&gt;<br>
+      リンク先は<a style="border-bottom:solid 1px black;">こちらから</a></p>
+    </div>
+    <div><!--position:fixed-->
+      <h3 style="position:fixed; top:0%; right:3%; text-align:right;">potision:fixed;</h3>
+      <h3>potision:fixed;</h3>
+      <p>&lt;p style="position:fixed; top:0%; right:3%; width:100%; text-align:right;""&gt;potision:fixed;&lt;/p&gt;</p>
+      <p>浮いた感じの状態になり画面固定になる。画面右上<br>
+      　.fixed_test{<br>
+      　&nbsp;&nbsp;&nbsp;position:fixed;<br>
+      　&nbsp;&nbsp;&nbsp;z-index:999;←これもセットで使う感じ。<br>
+      　}<br></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- warpper -->
