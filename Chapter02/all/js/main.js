@@ -112,26 +112,24 @@ $(function(){
   $('#typo').on('mousedown',function(){
     // $('#typo')　に　('クリックボタンが押されている時')
 
-    $('header ,h1').css({
+    $('header').css({
       color: 'white',
       backgroundColor:'black',
-      fontSize: '30px'
     });
+    $('h1').css('font-size' , '30px');
     // $('header')　の　(style)　の　('色、背景色、文字sizeを変える。')
-
   });
+
   $('#typo').on('mouseup',function(){
     // $('#typo')　に　('クリックボタンが離された時')
     $('header').css({
       color:'black',
       backgroundColor:'White',
-      fontSize: '20px'
     });
-    $('h1').css(font-size:);
     // $('header')　の　(style)　の　('色と背景色、文字sizeを変える。')
+    $('h1').css('font-size' , '20px');
   });
 });
-
 
 
 // ------------------cyapter②　メモ------------------
